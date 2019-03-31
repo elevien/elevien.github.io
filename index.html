@@ -1,0 +1,180 @@
+<html>
+
+<head>
+<style>
+  body {
+  	background-color:rgb(249, 244, 233);
+    margin-top: 10;
+    margin-bottom: 10;
+    margin-right: 100;
+    margin-left: 100;
+    padding-top: 70px;
+    padding:100}
+    /*rgb(204,0,0)*/
+  h1   			{color:rgb(114,0,0);padding:0;font-size:320%;text-align: center /*;text-shadow: 2px 2px 4px rgb(211,211,211);*/}
+  h2   			{color:rgb(114,0,0);padding:0;font-size:200% ;text-align: center/*;text-shadow: 2px 2px 4px rgb(211,211,211);*/ }
+  h3   			{color:gray;padding:0;font-size:180%}
+  p    			{color:black;font-size:110%}
+  span			{padding:5}
+  li   			{color:black;font-size:100%}
+  a:link		{color:rgb(114,0,0);font-size:100%}
+  a:hover		{color:orange;font-size:100%}
+  a:visited	{color:gray;font-size:100%}
+  a:visited:hover {color:orange}
+  .decorated{overflow: hidden;text-align: center;}
+.decorated > span{position: relative;display: inline-block;}
+.decorated > span:before, .decorated > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 3px solid;
+    width: 592px; /* half of limiter */
+    margin: 0 20px;
+}
+.decorated > span:before{right: 100%;}
+.decorated > span:after{left: 100%;}
+
+/* The navigation bar - NOT USING */
+.navbar {
+    text-align: center;
+    color:black
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 1; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar - NOT USING */
+.navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+/* navigation anchors - NOT USING */
+a.anchor {
+    display: block;
+    position: absolute;
+    top: -100px;
+    visibility: hidden;
+}
+
+  /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ @font-face {font-family:"Source Serif Pro Regular";src:url("SourceSerifPro-Regular.eot?") format("eot"),url("SourceSerifPro-Regular.woff") format("woff"),url("SourceSerifPro-Regular.ttf") format("truetype"),url("SourceSerifPro-Regular.svg#SourceSerifPro-Regular") format("svg");font-weight:normal;font-style:normal;}
+  * {
+     font-family: "Source Serif Pro Regular";
+    }
+</style>
+<!-- not using this script right now, see http://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file -->
+<script>
+
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+
+<body>
+<title> Ethan's Website </title>
+
+
+<!-- <div class="navbar">
+  <a href="#pubs">Publications</a>
+  <a href="#teach">Teaching</a>
+  <a href="#cont">Contact</a>
+</div> -->
+
+<h1>Ethan Levien</h1>
+<h2 class="decorated" id = "me"><span><a class="anchor" id="top" name="me"></a>About me</span></h2>
+
+
+
+
+<p>I am a Mathematics PhD Student at the University of Utah working under the direction of <a href="http://www.math.utah.edu/~bresslof/">Paul Bressloff</a>. You can find my CV <a href="./cv.pdf">here</a>.</p>
+
+
+<p>I am interested in understanding how noise affects biological systems, and in particular, how various sources of noise interact across different temporal and spatial scales. While it is generally accepted that randomness is prevalent in sub-cellular biochemical systems, it is often unclear when this randomness is relevant to the function of those systems. When noise does affect the behavior of a system, it can hinder or enhance the performance depending on the context. For example, random conformational transitions in a receptor can facilitate a more uniform distribution of presynaptic cargo along the axon of a neuron, while demographic noise in a population can cause extinction events even when the population grows exponentially on average.</p>
+
+<p>What general mechanisms can be identified that allow us to determine when and how a noisy biological system uses randomness to its advantage? As a theoretician and a mathematician, I have approached this question using tools from probability, dynamical systems, partial differential equations, and numerical analysis. Some specific interests are:
+</p>
+<ul type="square">
+ <li> Systems with both intrinsic and extrinsic noise </li>
+ <li> Diffusion in random and reactive environments </li>
+ <li> Non-equilibrium steady states in chemical reaction networks </li>
+ <li> Variance reduction for Monte Carlo estimators </li>
+ </ul>
+<!--<p> <a href="resume.pdf">CV</a> </p>-->
+<p>Find me on ...
+<ul type="square">
+<li><a href = "https://scholar.google.com/citations?user=hshuLN4AAAAJ&hl=en"> Google scholar</a></li>
+<li><a = href = "https://www.researchgate.net/profile/Ethan_Levien">  ResearchGate</a></li>
+<li><a = href = "https://github.com/elevien">  GitHub</a></li>
+</ul></p>
+
+
+
+<h2 class="decorated"><span><a class="anchor" id="top" name="pubs"></a>Publications</span></h2>
+
+
+<h3> In preparation, submitted or under review</h3>
+
+<ol>
+
+<li>P. C. Bressloff and E. Levien <a href="none">Effects of a common noisy environment on correlations in downstream gene transcription</a>  <em>   </em> <B> In preparation </B> (2017) </li>
+
+<li>E. Levien and P. C. Bressloff <a href="none">Robustness of stochastic chemical reaction networks to extrinsic noise: the role of deficiency</a>  <em>   </em> <B> Submitted to Multi-scale Model. Simul. </B> (2017) </li>
+
+</ol>
+<h3> Peer reviewed </h3>
+<ol>
+
+<li>E. Levien and P. C. Bressloff <a href="http://iopscience.iop.org/article/10.1088/1751-8121/aa91de/meta"> On flux balance relations for irreversible chemical reaction networks</a>  <em> J. Phys A </em> <B> Accepted </B> (2017) </li>
+
+<li>P. C. Bressloff, B. M. Karamched, S. D. Lawley and E. Levien <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.96.022102">  Diffusive transport in the presence of stochastically gated absorption. </a>  <em> Phys. Rev. E  </em> <B>96</B> 022102 (2017) </li>
+
+<li>E. Levien and P. C. Bressloff <a href="http://www.sciencedirect.com/science/article/pii/S0021999117304436"> Coupling sample paths to the partial thermodynamic limit in stochastic chemical reaction networks.</a>  <em> J. Comp. Phys.  </em> <B>346</B> 1-13 (2017) </li>
+
+<li>E. Levien and P. C. Bressloff  <a href="http://epubs.siam.org/doi/abs/10.1137/16M1061084"> A stochastic hybrid framework for obtaining statistics of many random walkers in a switching environment.</a> <em> Multi-scale Model. Simul.  </em> <B>14</B> 1417-1433  (2016)</li>
+
+<li>E. Levien and P. C. Bressloff <a href="http://journals.aps.org/pre/abstract/10.1103/PhysRevE.92.042129"> Quasi steady-state analysis of coupled flashing ratchets.</a> <em> Phys. Rev. E. </em> <B>92</B> 042129 (2015)</li>
+
+<li>P. C. Bressloff and E. Levien <a href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.114.168101"> Synaptic democracy and active intracellular transport in axons.</a> <em> Phys. Rev. Lett.</em> <B>114</B> 168101 (2015)</li>
+</ol>
+
+
+
+
+
+<h2 class="decorated"><span><a class="anchor" id="top" name="teach"></a>Teaching</span></h2>
+<ul type="square">
+<li>Fall 2017: Math 1310-009: Engineering Calculus I. Course information and materials will be posted on Canvas. </li>
+<li>Spring 2016: Math 3140-002,003: Engr. Vect. Calc. & PDE Lab. </li>
+<li>Fall 2015: Math 1310-002,003: Engineering Calculus I Lab.  </li>
+</ul>
+
+<h2 class="decorated"><span><a class="anchor" id="top" name="cont"></a>Contact</span></h2>
+
+<p align=center>
+Office: LCB 202<br/>
+<!--Email: <a href="mailto:levien&#x40;math.utah.edu">levien&#x40;math.utah.edu</a>-->
+Email: levien at math dot utah dot edu
+</p>
+
+<p align=center>
+University of Utah<br/>
+Department of Mathematics<br/>
+155 S. 1400 E. JWB 233<br/>
+Salt Lake City, UT<br/>
+84112-0090 USA
+</p>
+
+<!-- <HR COLOR="black" WIDTH="30%" align=center> -->
+
+
+
+
+</body>
+</html>
