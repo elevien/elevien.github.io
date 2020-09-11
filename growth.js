@@ -52,8 +52,8 @@ points.attr("cx", function(d) { return d.x; })
 
 
 var simulation = d3.forceSimulation(cells)
-    .force("collide", d3.forceCollide().radius(collide).strength(0.6))
-    //.force("many-body",d3.forceManyBody().strength(-0.2))
+    .force("collide", d3.forceCollide().radius(collide).strength(0.4))
+    .force("many-body",d3.forceManyBody().strength(-0.2))
     .on("tick", ticked);
 simulation.nodes(cells);
 
@@ -89,7 +89,7 @@ simulation.nodes(cells);
 
     var new_cells = []
     for (var i=0;i<cells.length;i++){
-      if (cells[i].y-y0<300 & y0-cells[i].y<300  & cells[i].x-x0<500 & x0-cells[i].x<500){
+      if (cells[i].y<h+50 & cells[i].y>-50  & cells[i].x<w+50 & cells[i].x>-50){
         new_cells.push(cells[i]);
       }
     }
