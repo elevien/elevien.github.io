@@ -70,7 +70,7 @@ simulation.nodes(cells);
 
     for(var i=0;i<n;i++){
       cells[i].radius = cells[i].radius+cells[i].radius/cells[i].tau*dt;
-      cells[i].p = cells[i].p + 0.0001*(0.6-cells[i].p)*dt+d3.randomNormal(0, Math.sqrt(dt*0.00001))();
+      cells[i].p = cells[i].p + 0.00005*(0.6-cells[i].p)*dt+d3.randomNormal(0, Math.sqrt(dt*0.000005))();
       if (cells[i].radius>700){
         cells.push({
           x:cells[i].x+ d3.randomNormal(0, 0.5)(),
