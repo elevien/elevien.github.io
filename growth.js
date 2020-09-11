@@ -89,7 +89,7 @@ simulation.nodes(cells);
 
     var new_cells = []
     for (var i=0;i<cells.length;i++){
-      if (cells[i].y-y0<100 & y0-cells[i].y<100  & cells[i].x-x0<500 & x0-cells[i].x<500){
+      if (cells[i].y-y0<140 & y0-cells[i].y<140  & cells[i].x-x0<500 & x0-cells[i].x<500){
         new_cells.push(cells[i]);
       }
     }
