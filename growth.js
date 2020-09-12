@@ -30,7 +30,7 @@ var points = g.selectAll("circle").data(cells);
 // .style("stroke-width",3)
 // .style("stroke","black")
 // .style("stroke-opacity",1);
-var redscale = d3.scaleLinear().domain([1,10]).range(["white", d3.rgb(114, 0, 0) ])
+var redscale = d3.scaleLinear().domain([1,10]).range([d3.rgb(205, 88, 73), d3.rgb(114, 116, 111) ])
 
 // draw a circle
 svg.append("clipPath")       // define a clip path
