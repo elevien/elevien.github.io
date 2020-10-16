@@ -1,13 +1,12 @@
 
 // Model paramaters
-var tau_avg = 6000.;
+var tau_avg = 5000.;
 var tau_std = 600;
 var max_depth = 10;
 var drawFlag = true;
 var dh = 300;
 var dt = 20;
 var w = 500;
-console.log(d3.select('#d3-canvas'))
 var h = 200;
 var time = 0;
 var x0 = w/2
@@ -18,7 +17,7 @@ var svg = d3.select('#d3-canvas')
         .attr("height", h)
 var N_cells = 1;
 var cells =  [
-{x: x0, y: y0, tau:tau_avg,radius:100,p:0.8}];
+{x: x0, y: y0, tau:tau_avg,radius:300,p:0.8}];
 var g= svg.append("g")
 var points = g.selectAll("circle").data(cells);
 //
@@ -32,28 +31,11 @@ var points = g.selectAll("circle").data(cells);
 // .style("stroke-opacity",1);
 var redscale = d3.scaleLinear().domain([1,10]).range([d3.rgb(205, 88, 73), d3.rgb(114, 116, 111) ])
 
-// draw a circle
-svg.append("clipPath")       // define a clip path
-.attr("id", "circle-clip")
-.append("circle")            // shape it as an ellipse
-.attr("cx", x0)            // position the x-centre
-.attr("cy", y0)            // position the y-centre
-.attr("r",80);
-
-points.attr("cx", function(d) { return d.x; })
-      .attr("cy", function(d) { return d.y; })
-      .attr("r", function(d) { return Math.sqrt(d.radius/3.14); })
-      .style("fill-opacity",1)
-      .attr("fill", function(d) { return redscale(1+10*d.p); })
-      .style("stroke-opacity",1)
-      .style("stroke-width", 0)
-      .style("stroke","black");
-
 
 
 var simulation = d3.forceSimulation(cells)
-    .force("collide", d3.forceCollide().radius(collide).strength(0.4))
-    .force("many-body",d3.forceManyBody().strength(-0.2))
+    .force("collide", d3.forceCollide().radius(collide).strength(0.2))
+    .force("many-body",d3.forceManyBody().strength(-0.4))
     .on("tick", ticked);
 simulation.nodes(cells);
 
@@ -104,7 +86,8 @@ simulation.nodes(cells);
     points.attr("cx", function(d) { return d.x; })
     .attr("cy", function(d) { return d.y; })
     .attr("r", function(d) { return Math.sqrt(d.radius/3.14); })
-    .style("fill-opacity",1)
+    .style("fill-opacity",function(d)
+    { return 1-distance(d.x,d.y,x0,y0);})
     .attr("fill", function(d) { return redscale(1+10*d.p); })
     .style("stroke-opacity",1)
     .style("stroke-width", 0)
@@ -112,12 +95,14 @@ simulation.nodes(cells);
 
 
     simulation.nodes(cells).alpha(1);
-    svg.append("svg").attr("clip-path","url(#circle-clip)");
-
 
   }
 
 
   function collide(d){
     return Math.sqrt(d.radius/3.14)+1;
+  }
+
+  function distance(x,y,x1,y1){
+    return Math.sqrt((x/w*2-x1/w*2)**2);
   }

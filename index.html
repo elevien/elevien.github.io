@@ -6,22 +6,22 @@
   	background-color:rgb(230, 200, 189);
     margin-top: 10;
     margin-bottom: 10;
-    margin-right: 100;
-    margin-left: 100;
+    margin-right: 240;
+    margin-left: 240;
     padding-top: 70px;
     padding:100}
     /*rgb(204,0,0)*/
   h1   			{color:rgb(50,62,70);padding:0;font-size:320%;text-align: center /*;text-shadow: 2px 2px 4px rgb(211,211,211);*/}
   h2   			{color:rgb(50,62,70);padding:0;font-size:200% ;text-align: center/*;text-shadow: 2px 2px 4px rgb(211,211,211);*/ }
-  h3   			{color:gray;padding:0;font-size:180%}
+  h3   			{color:rgb(50,62,70);padding:0;font-size:180%}
   p    			{color:black;font-size:110%}
   span			{padding:5}
   li   			{color:black;font-size:100%}
-  a:link		{color:rgb(50,62,70);font-size:100%}
-  a:hover		{color:orange;font-size:100%}
-  a:visited	{color:gray;font-size:100%}
-  a:visited:hover {color:orange}
-  .decorated{overflow: hidden;text-align: center;}
+  a:link		{color:rgb(106, 133, 119);font-size:100%;text-decoration: none}
+  a:hover		{color:rgb(205, 88, 73);font-size:100%;text-decoration: none}
+  a:visited	{color:rgb(114, 116, 111);font-size:100%;text-decoration: none}
+  a:visited:hover {color:rgb(205, 88, 73);text-decoration: none}
+.decorated{overflow: hidden;text-align: center;}
 .decorated > span{position: relative;display: inline-block;}
 .decorated > span:before, .decorated > span:after{
     content: '';
@@ -87,8 +87,13 @@ function show(shown, hidden) {
 </div> -->
 
 <h1>Ethan Levien</h1>
-<!-- <h2>Stochastic processes, Data analysis, Biology</h2> -->
-
+<!-- <h2>NSF Mathematical Sciences Research Postdoc</h2> -->
+<p align="justify" >
+I am an NSF Mathematical Sciences Postdoctoral Research Fellow at Harvard University in the
+<a = href = "https://www.seas.harvard.edu/">  School of Engineering and Applied Sciences</a>. I like thinking about how randomness shapes microbial population dynamics, evolution and single-cell growth. Occasionally I write <a href = "https://scholar.google.com/citations?user=hshuLN4AAAAJ&hl=en"> papers</a>.
+</br>
+</br>
+</p>
 <!--
 <p>Find me on ...
 <ul type="square">
@@ -99,13 +104,21 @@ function show(shown, hidden) {
  -->
 
 
-<div  id='d3-canvas'  style="text-align:center;">
+
+ <div  id='d3-canvas'  style="text-align:center;">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-timer.v1.min.js"></script>
+<script src="https://d3js.org/d3-random.v1.min.js"></script>
+<script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
+<script src="growth.js"></script>
+<!-- <a href = "https://github.com/elevien">
+  <div  id='d3-canvas'  style="text-align:center;">
  <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://d3js.org/d3-timer.v1.min.js"></script>
 <script src="https://d3js.org/d3-random.v1.min.js"></script>
 <script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
 <script src="growth.js"></script>
-</div>
+</div></a> -->
 
 <h2 class="decorated"><span><a class="anchor" id="top" name="cont"></a>Contact</span></h2>
 
