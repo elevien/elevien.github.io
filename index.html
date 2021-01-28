@@ -104,13 +104,24 @@ I am an NSF Mathematical Sciences Postdoctoral Research Fellow at Harvard Univer
  -->
 
 
- <div  id='d3-canvas'  style="text-align:center;">
+ <!-- <div  id='d3-canvas'  style="text-align:center;">
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://d3js.org/d3-timer.v1.min.js"></script>
 <script src="https://d3js.org/d3-random.v1.min.js"></script>
 <script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
 <script src="growth.js"></script>
-</div>
+</div> -->
+
+<div class="chart"></div>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@elevien/spatial-growth.js?v=3";
+(new Runtime).module(define, name => {
+  if (name === "chart") return Inspector.into(".chart")();
+});
+</script>
+
 <!-- <a href = "https://github.com/elevien">
   <div  id='d3-canvas'  style="text-align:center;">
  <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -124,8 +135,8 @@ I am an NSF Mathematical Sciences Postdoctoral Research Fellow at Harvard Univer
 </br>
 </br>
 I am an NSF Mathematical Sciences Postdoctoral Research Fellow at Harvard University in the
-<a = href = "https://www.seas.harvard.edu/">  School of Engineering and Applied Sciences</a>.
-</p>
+<a = href = "https://www.seas.harvard.edu/">  School of Engineering and Applied Sciences</a>. Find me on <a href = "https://scholar.google.com/citations?user=hshuLN4AAAAJ&hl=en"> Google scholar</a> and
+<a = href = "https://github.com/elevien">  GitHub</a>. </p>
 
 
 <h2 class="decorated"><span><a class="anchor" id="top" name="cont"></a>Contact</span></h2>
