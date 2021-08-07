@@ -3,7 +3,7 @@
 
 
 * {
-  background-color:rgb(230, 230, 209);
+  background-color:rgb(255, 255, 255);
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
@@ -68,7 +68,7 @@ header {
   align-items: center;
   justify-content: center;
   padding:3;
-  background: rgb(230, 230, 209);
+  background: rgb(255, 255, 255);
   height: 24vh;
 }
 header > h1 {
@@ -103,12 +103,12 @@ header > h2 {
   overflow: hidden;
   text-align: center;
   padding:14px;
-  background-color: rgb(230, 230, 209);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Navbar links */
 #navbar a {
-  background: rgb(230, 230, 209);
+  background: rgb(255, 255, 255);
   font-size: 30px;
   font-family: "QuicksandBook-Regular";
   text-decoration: unset;
@@ -133,65 +133,3 @@ header > h2 {
 .sticky + .content {
   padding-top: 15px;
 }
-/* nav#navbar {
-  margin-left: 200;
-  margin-right: 200;
-  margin-top: 10;
-  margin-bottom: 20;
-  top: 0;
-  transition: all 0.5s linear;
-  z-index: 0;
-}
-
-ul.menu-list {
-  background: rgb(230, 200, 189);
-  display: flex;
-  list-style: none;
-}
-ul.menu-list li {
-  background: rgb(230, 200, 189);
-  display: flex;
-  flex: 1;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-ul.menu-list li.logo {
-  max-width: 0;
-  overflow: hidden;
-  background: #fff;
-  transition: all 1s linear;
-}
-.logo > a > img {
-  max-width: 80px;
-}
-
-ul.menu-list li > a:hover		{
-  color:rgb(205, 88, 73);
-  font-size: 30px;
-  text-decoration: none;}
-ul.menu-list li > a {
-  background: rgb(230, 200, 189);
-  font-size: 30px;
-  font-family: "QuicksandBook-Regular";
-  text-decoration: unset;
-  color:rgb(50,62,70);;
-  transition: 1s linar;
-}
-body.fixed-nav nav#navbar {
-  margin-left: 200;
-  margin-right: 200;
-  margin-top: 10;
-  margin-bottom: 20;
-  top: 0;
-  transition: all 0.5s linear;
-  z-index: 0;
-  position: fixed;
-}
-body.fixed-nav li.logo {
-  max-width: 0;
-  overflow: hidden;
-  background: #fff;
-  transition: all 1s linear;
-  max-width: 300px;
-} */
