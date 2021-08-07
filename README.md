@@ -1,1 +1,4 @@
-code for my personal website
+
+## About
+
+I'm an assistent professor at Dartmouth. This site is under construction.
