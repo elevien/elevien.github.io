@@ -4,9 +4,9 @@ var tau_avg = 5000.;
 var tau_std = 600;
 var max_depth = 10;
 var drawFlag = true;
-var dh = 300;
-var dt = 20;
-var w = 500;
+var dh = 40;
+var dt = 30;
+var w = 800;
 var h = 200;
 var time = 0;
 var x0 = w/2
@@ -35,7 +35,7 @@ var redscale = d3.scaleLinear().domain([1,10]).range([d3.rgb(205, 88, 73), d3.rg
 
 var simulation = d3.forceSimulation(cells)
     .force("collide", d3.forceCollide().radius(collide).strength(0.2))
-    .force("many-body",d3.forceManyBody().strength(-0.4))
+    .force("many-body",d3.forceManyBody().strength(-0.7))
     .on("tick", ticked);
 simulation.nodes(cells);
 
@@ -76,7 +76,6 @@ simulation.nodes(cells);
       }
     }
     cells = new_cells;
-    console.log(cells)
 
 
 
@@ -86,8 +85,8 @@ simulation.nodes(cells);
     points.attr("cx", function(d) { return d.x; })
     .attr("cy", function(d) { return d.y; })
     .attr("r", function(d) { return Math.sqrt(d.radius/3.14); })
-    .style("fill-opacity",function(d)
-    { return 1-distance(d.x,d.y,x0,y0);})
+    // .style("fill-opacity",function(d)
+    // { return 1-distance(d.x,d.y,x0,y0);})
     .attr("fill", function(d) { return redscale(1+10*d.p); })
     .style("stroke-opacity",1)
     .style("stroke-width", 0)
