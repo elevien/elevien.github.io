@@ -1,8 +1,7 @@
 
 ## About Me
 
-I am an applied mathematician, interested in stochastic processes, applied statistics and biology. Find me on <a href = "https://scholar.google.com/citations?user=hshuLN4AAAAJ&hl=en"> Google scholar</a> and
-     <a href = "https://github.com/elevien">  GitHub</a>
+I am an applied mathematician, interested in stochastic processes, applied statistics and biology. Find me on <a href = "https://scholar.google.com/citations?user=hshuLN4AAAAJ&hl=en"> Google scholar</a>. 
 
 ## Teaching
 
