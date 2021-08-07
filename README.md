@@ -6,7 +6,7 @@ I am an applied mathematician, interested in stochastic processes, applied stati
 
 ## Teaching
 
- In the fall of 2021 I will be teaching <a href="">Math 50 (linear models)</a>.
+ In the fall of 2021 I will be teaching Math 50 (linear models). 
  
  ## Opportunities
  
