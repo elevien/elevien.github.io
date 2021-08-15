@@ -3,11 +3,10 @@ source "https://rubygems.org"
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`.
 # This will help ensure the proper Jekyll version is running.
-gem "jekyll", "~> 4.2.0"
-gem "jekyll-seo-tag"
+gem "jekyll"
+gem "github-pages", group: :jekyll_plugins
 
-
-
+#
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
