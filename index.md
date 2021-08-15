@@ -14,4 +14,4 @@ I am an applied mathematician, interested in stochastic processes, applied stati
 
 # Opportunities
 
-I anticipate having openings for graduate students and postdocs over the next year. Please consider getting in-touch if you are interested!
+I anticipate having openings for graduate students and a postdoc over the next year. Please get in-touch if you are interested!
