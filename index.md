@@ -9,12 +9,8 @@ layout: default
 # About me
 
 
-I am an applied mathematician, interested in stochastic processes, applied statistics and biology. I do [research](./research.html) and [teach](./teaching.html) at [Dartmouth College](https://home.dartmouth.edu/) in New Hampshire.
+I am an applied mathematician, interested in stochastic processes, applied statistics and biology. I do [research](https://scholar.google.com/citations?user=hshuLN4AAAAJ&hl=en) and [teach](./teaching.html) at [Dartmouth College](https://home.dartmouth.edu/) in New Hampshire.
 
-
-
-Find me on <a href = "https://scholar.google.com/citations?user=hshuLN4AAAAJ&hl=en"> Google scholar</a> and
-   <a href = "https://github.com/elevien">  GitHub</a>.
 
 # Opportunities
 
