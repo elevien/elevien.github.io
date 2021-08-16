@@ -1,8 +1,9 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
+home: yes
 layout: default
+observable: https://api.observablehq.com/@elevien/ar1-process.js?v=3
 # logo: /assets/img/pic.png
 ---
 

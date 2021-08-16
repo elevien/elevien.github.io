@@ -18,15 +18,27 @@
   <body>
     <div class="wrapper">
       <header>
+
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if page.logo %}
           <img src="{{page.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
+        {% if page.observable %}
+        <div id="observablehq-chart-3631c2ad"></div>
+      <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "{{page.observable}}";
+      new Runtime().module(define, name => {
+        if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-3631c2ad"));
+      });
+      </script>
+        {% endif %}
+
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-  
+
 
         <p class="view"><a href="{{ site.github.owner_url }}">GitHub <small>{{ site.github.owner_url }}</small></a></p>
 
