@@ -12,3 +12,7 @@ observable: https://api.observablehq.com/@elevien/branching-process.js?v=3
 
 
 I am an applied mathematician interested in stochastic processes and biology. I do [research](https://scholar.google.com/citations?user=hshuLN4AAAAJ&hl=en) and [teach](./teaching.html) at [Dartmouth College](https://home.dartmouth.edu/) in New Hampshire. 
+
+
+
+
