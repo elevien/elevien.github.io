@@ -47,3 +47,32 @@ footer p{
 footer a{
   color: rgb(202, 210, 220);
 }
+
+img[src*="contour.png"] {
+  width: 250px;
+  height: auto;
+}
+
+/* ---------------------------------------------------------------------- */
+/* This is for expandable images */
+.image-container {
+  margin-bottom: 10px;
+}
+
+
+.image-container img {
+  cursor: pointer;
+  width: 500px;
+  height: 100px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Hide the expandable content initially */
+.content {
+  display: none;
+  margin-top: 10px;
+}
