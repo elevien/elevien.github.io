@@ -59,13 +59,13 @@ My reserach in this area includes:
   </div>
 </div>
 
-<div class="image-container">
+<!-- <div class="image-container">
 <h2> Gene expression and stress </h2>
   <img src="assets/img/nullclines.png" alt="Image 3" onclick="toggleContent('content3')">
   <div id="content3" class="content">
     <p>How do globel resource allocations strategies interact with gene networks and shape stress response in single-cells?  </p>
   </div>
-</div>
+</div> -->
 
 
 
