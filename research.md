@@ -16,7 +16,7 @@ layout: default
 
 
 <div class="image-container">
- <h2> Evolution and disordered systems </h2>
+ <h2> Mathematical interests </h2>
   <img src="assets/img/coales.png" alt="Image 1" onclick="toggleContent('content1')">
   <div id="content1" class="content">
   
@@ -31,7 +31,7 @@ My reserach in this area includes:
     I have collaborated with Farshid Jafarpour (Utrecht University) in this area.
   </li>
   <li>
-    Mathematical aspects of <strong>extremal statistics and large deviation theory</strong>. Both theories concern different notions of ``extremal'' events in probability theory. I have become particularly interested in connections between these areas and geometry. 
+    Mathematical aspects of <strong>extremal statistics and large deviation theory</strong>. Both theories concern different notions of ``extremal'' events in probability theory. I have become particularly interested in connections between these areas and geometry. There is a more applied aspect of this work (see below).
   </li>
 </ul>
     <hr>
@@ -39,7 +39,7 @@ My reserach in this area includes:
 </div>
 
 <div class="image-container">
-<h2> Single-cell physiology </h2>
+<h2> Biological interests </h2>
   <img src="assets/img/L1210.png" alt="Image 2" onclick="toggleContent('content2')">
   <div id="content2" class="content">
    <p>In biology, I am interested in single-cell physiology, including:</p>
@@ -53,7 +53,7 @@ My reserach in this area includes:
     <strong>Gene expression under antibiotic stress</strong>, especially how patterns of gene expression change under stress. This is ongoing work with Daniel Schultz (Geisel School of Medicine) and his group. 
   </li>
   <li>
-    <strong>Inference of extreme events in cell populations</strong>, joint work with Ariel Amir and Trevor GrandPre (Washington University).
+    <strong>Inference of extreme events in cell populations</strong>. When can we predict population dynamics from single-cell data? This is joint work with Ariel Amir and Trevor GrandPre (Washington University).
   </li>
 </ul>
   </div>
