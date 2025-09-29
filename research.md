@@ -25,13 +25,13 @@ layout: default
 My reserach in this area includes:
 <ul>
   <li>
-    <strong>branching processes </strong>, which are models of population growth where individuals do not interact. 
-    These appear in biology, but also in machine learning and statistical physics. 
-    The Feynman–Kac formula, which relates growth exponents to path integrals, plays a central role in this work. 
-    I have collaborated with Farshid Jafarpour (Utrecht University) in this area.
+    <strong>branching processes </strong>. These are models of population growth where individuals do not interact and have applications in population biology, but also in machine learning and statistical physics. 
   </li>
   <li>
-    Mathematical aspects of <strong>extremal statistics and large deviation theory</strong>. Both theories concern different notions of ``extremal'' events in probability theory. I have become particularly interested in connections between these areas and geometry. There is a more applied aspect of this work (see below).
+    <strong>Extremal statistics and large deviation theory</strong>. Extremal statistics concerns the study of maxima, minima and order statistics or random variables, while large deviations are exponentially rate events. 
+  </li>
+   <li>
+    <strong>Mathematics of machine learning</strong>. I'm studying multiple instance learning problems... 
   </li>
 </ul>
     <hr>
@@ -47,13 +47,12 @@ My reserach in this area includes:
   <li>
     <strong>Size homeostasis</strong> — how do cells regulate their size? 
     Do large cells slow down their growth rate, or do they accelerate their generation time? 
-    In this area I have worked with Ariel Amir (Weizmann Institute of Science), Teemu Miettinen (MIT), and (my graduate student) Jessica Rattray.
   </li>
   <li>
-    <strong>Gene expression under antibiotic stress</strong>, especially how patterns of gene expression change under stress. This is ongoing work with Daniel Schultz (Geisel School of Medicine) and his group. 
+    <strong>Gene expression under antibiotic stress</strong>, especially how patterns of gene expression change under stress. 
   </li>
   <li>
-    <strong>Inference of extreme events in cell populations</strong>. When can we predict population dynamics from single-cell data? This is joint work with Ariel Amir and Trevor GrandPre (Washington University).
+    <strong>Inference of extreme events in cell populations</strong>. When can we predict population dynamics from single-cell data? 
   </li>
 </ul>
   </div>
