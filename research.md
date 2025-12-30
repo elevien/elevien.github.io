@@ -28,7 +28,7 @@ My reserach in this area includes:
     <strong>branching processes </strong>. These are models of population growth where individuals do not interact and have applications in population biology, but also in machine learning and statistical physics. 
   </li>
   <li>
-    <strong>Extremal statistics and large deviation theory</strong>. Extremal statistics concerns the study of maxima, minima and order statistics or random variables, while large deviations are exponentially rate events. 
+    <strong>Extremal statistics and large deviation theory</strong>. Extremal statistics concerns the study of maxima, minima and order statistics or random variables, while large deviations are exponentially rare events. 
   </li>
    <li>
     <strong>Mathematics of machine learning</strong>. I'm studying multiple instance learning problems... 
